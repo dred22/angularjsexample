@@ -1,0 +1,14 @@
+<form name="searchForm" class="form-horizontal" ng-submit="searchComponent.search(searchComponent.query)" novalidate>
+	<div class="form-group">
+		<label class="control-label" for="seek">What are you looking for ?</label>
+		<input type="text" id="seek" name="seek" ng-model="searchComponent.query" required>
+	</div>
+	<button class="btn btn-default" type="submit" ng-disabled="searchForm.$invalid" >Searche</button>
+</form>
+<!-- <pre>
+	{{searchComponent.gg | json}}
+</pre> -->
+	
+
+
+  <list-serie-component series='searchComponent.gg'></list-serie-component> 

@@ -1,0 +1,8 @@
+<article class="serieComponent"> 
+	<h3>{{serieComponent.serie.title}}</h3>
+	<img ng-if="serieComponent.serie.image" ng-src="{{serieComponent.serie.image}}" alt="my image">
+	<img ng-if="!serieComponent.serie.image" src="img/img1.jpg" alt="my image">
+	<div class="indicator">{{serieComponent.serie.nomberEpisodes}}</div>
+	<p><a class="btn btn-default" ui-sref="detail({movieId: serieComponent.serie.nomberEpisodes})">Detail</a></p>
+	
+</article>

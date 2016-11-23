@@ -1,0 +1,8 @@
+<article class="serieComponent"> 
+	<h3>{{detailComponent.serie.title}}</h3>
+	<img ng-if="detailComponent.serie.image" ng-src="{{detailComponent.serie.image}}" alt="my image">
+	<img ng-if="!detailComponent.serie.image" src="img/img1.jpg" alt="my image">
+	<div class="indicator">Nombre of episodes {{detailComponent.serie.nomberEpisodes}}</div>
+	<button class="btn btn-default" ng-click="detailComponent.add(detailComponent.serie)">Add</button>
+	<button class="btn btn-default" ng-click="detailComponent.isStored(detailComponent.serie)">stored</button>
+</article>
